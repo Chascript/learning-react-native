@@ -45,7 +45,7 @@ const StartGameScreen = props => {
         <Text>You Selected</Text>
         <NumberContainer>{selectedNumber}</NumberContainer>
         <View style={styles.confirmedButton} >
-          <Button title='Start The Game!' color={Colors.primary} onPress={() => {}}></Button>
+          <Button title='Start The Game!' color={Colors.primary} onPress={() => props.onStartGame(selectedNumber)}></Button>
         </View>
       </Card>
     )
